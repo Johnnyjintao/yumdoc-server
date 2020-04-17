@@ -29,7 +29,7 @@
     "mysql2": "^1.5.3",
     "node-uuid": "^1.4.8",
     "pug": "^2.0.0-rc.1",
-    "sequelize": "^4.37.10"
+    "sequelize": "^5.15.1"
   },
   "devDependencies": {
     "nodemon": "^1.8.1"
