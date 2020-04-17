@@ -1,5 +1,5 @@
-# jtnews-server
-#### 正在完善，敬请期待（50%）！
+# API文档系统
+
 > 你的 "Star" 是我最大的动力！🌹
 ## 一、项目介绍
 
@@ -21,84 +21,6 @@
 - 1. 在根目录下进入项目，
 - 2. 安装包，执行: `npm install` 命令，
 - 3. 启动服务: `npm start`; 监听地址：http://localhost:3000/ 即可以访问。
-
-## 接口配置
-
-```
-// 用户注册
-router.post('/user/regist', UserController.create);
-// 登录
-router.post('/user/login', UserController.login);
-// 用户删除
-router.delete('/user/delete/:id', UserController.delete);
-// 用户信息
-router.post('/user/info', checkToken,UserController.getUserInfo);
-// 用户列表
-router.get('/user/list', UserController.getUserList);
-// 上传图片
-router.post('/article/upload_pic', upload.single('file'), ArticleController.upload_pic)
-// 创建文章
-router.post('/article/create_article', ArticleController.create)
-// 保存文章
-router.post('/article/save_article', ArticleController.save)
-// 查询文章详情
-router.post('/article/query_article', ArticleController.search)
-
-// 创建分类
-router.post('/category/create_category', CategoryController.create)
-// 获取分类列表
-router.post('/category/get_category_list', CategoryController.list)
-// 修改分类
-router.post('/category/update_category', CategoryController.update)
-// 删除分类
-router.post('/category/del_category', CategoryController.delete)
-
-```
-
-
-## 部分接口示例
-
-#### 注册接口
-
-##### 地址：
-```
-/user/register
-```
-
-##### 请求方式
-
-```
-POST
-```
-
-##### 参数说明
-
-参数 | 说明 | 必填 | 类型
----|---|---|---
-username | 用户名 | 是 | String
-password | 用户名 | 是 | String
-
-##### 示例（postman软件测试，自己下载测试）
-
-```
-http://localhost:3000/api/v1/user/register
-
-参数一：username bobo
-参数二：password bobo123
-```
-
-
-##### 创建成功
-
-```js
-{
-    "code": 200,
-    "msg": "创建用户成功",
-    "data": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxpYW5nZmVuZ2JvIiwiaWQiOjMsImlhdCI6MTU0MzM4MjAwOCwiZXhwIjoxNTQzMzg1NjA4fQ.-AEyGpqf5l7uKdaHArEGpKC3L5wHRHSNkvcciVumhBo"
-}
-```
-
-```
 
 
 ## 最后
